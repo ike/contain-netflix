@@ -4,25 +4,18 @@ const NETFLIX_CONTAINER_COLOR = "red";
 const NETFLIX_CONTAINER_ICON = "briefcase";
 
 let NETFLIX_DOMAINS = [
+  "netflix.com", "nflxso.net", "nflxvideo.net", "nflximg.net", "nflxext.com"
 ];
 
-const NETFLIX_INTL_DOMAINS = [
-];
-
-const NETFLIX_SERVICES = [
-];
-
-
-NETFLIX_DOMAINS = NETFLIX_DOMAINS.concat(NETFLIX_INTL_DOMAINS)
-  .concat(NETFLIX_SERVICES);
-
-const MAC_ADDON_ID = "@testpilot-containers";
+const MAC_ADDON_ID = "@contain-netflix";
 
 let macAddonEnabled = false;
 let extensionSettings = {};
 
 const canceledRequests = {};
 const tabsWaitingToLoad = {};
+
+const netflixHostREs = [];
 
 async function isMACAddonEnabled () {
   try {
@@ -203,11 +196,8 @@ function reopenTab ({url, tab, cookieStoreId}) {
     index: tab.index + 1,
     windowId: tab.windowId
   });
-  // We do not want to erase netflix container if going from
-  // netflix container back to default.
-  if (!(isSearchPageURL(tab.url))) {
-    browser.tabs.remove(tab.id);
-  }
+
+  browser.tabs.remove(tab.id);
 }
 
 function isNetflixURL (url) {
