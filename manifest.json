@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "Netflix Container",
+    "version": "1.5.1",
+
+    "description": "Netflix Container isolates your Netflix activity from the rest of your web activity in order to prevent Netflix from tracking you outside of the Netflix website via third party cookies.",
+
+    "icons": {
+        "48": "icon.png",
+        "96": "icon@2x.png"
+    },
+
+    "applications": {
+      "gecko": {
+        "id": "@contain-netflix",
+        "strict_min_version": "57.0"
+      }
+    },
+
+    "homepage_url": "https://github.com/containers-everywhere/contain-netflix",
+
+    "permissions": [
+        "<all_urls>",
+        "contextualIdentities",
+        "cookies",
+        "management",
+        "tabs",
+        "webRequestBlocking",
+        "webRequest",
+        "storage"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+    
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+    }
+}
