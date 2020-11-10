@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Netflix Container",
-    "version": "1.5.1",
+    "version": "1.0.0",
 
     "description": "Netflix Container isolates your Netflix activity from the rest of your web activity in order to prevent Netflix from tracking you outside of the Netflix website via third party cookies.",
 
