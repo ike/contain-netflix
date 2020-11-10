@@ -2,7 +2,7 @@
 
 **Prevent Netflix from tracking your visits to other websites**
 
-This is a fork of [Facebook Container](https://github.com/mozilla/contain-facebook)
+This is a fork of [Facebook Container](https://github.com/mozilla/contain-facebook), and [Contain Google](https://github.com/containers-everywhere/contain-google).
 
 Netflix Container is an add-on you can install on Firefox to prevent Netflix from tracking your activity on other websites, so you can continue to use Netflix while protecting your privacy.
 
