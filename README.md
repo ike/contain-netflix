@@ -22,18 +22,6 @@ We’ve made it easy to take steps to protect your privacy so you can go on with
 2. Open Netflix and use it like you normally would.  Firefox will automatically switch to the Netflix Container tab for you.
 3. If you click on a link to a page outside of Netflix or type in another website in the address bar, Firefox will load them outside of the Netflix Container
 
-## How does this affect Netflix’s features?
-
-Netflix Containers prevents Netflix from linking your activity on other websites to your Netflix identity. Therefore, the following will not work:
-
-### “Like” buttons and embedded Netflix comments on other websites.
-
-Because you are logged into Netflix only in the Container, “Like” buttons and embedded Netflix comments on other websites will not work.
-
-### Logging in or creating accounts on other websites using Netflix
-
-Websites that allow you to create an account or log in using Netflix will generally not work properly.
-
 ## Will this protect me from Netflix completely?
 
 This add-on does not prevent Netflix from mishandling the data it already has or permitted others to obtain about you. Netflix still will have access to everything that you do while you are on Netflix.com or on any Netflix app, including your Netflix comments, photo uploads, likes, and any data you share with Netflix connected apps, etc.  
